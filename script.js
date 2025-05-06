@@ -58,11 +58,18 @@ async function reloadListeners() {
 
   try {
     const listeners = await rcFetch(`/listeners?station=${STATION_ID}`);
-    listeners.forEach(u => {
-      const entry = document.createElement('div');
-      entry.textContent = u.name;
-      listEl.appendChild(entry);
-    });
+
+// client-side filter: skip empty names & duplicates
+const seen = new Set();
+listeners.forEach(u => {
+  const name = (u.name || "").trim();
+  if (!name || seen.has(name)) return;
+  seen.add(name);
+
+  const entry = document.createElement('div');
+  entry.textContent = name;
+  listEl.appendChild(entry);
+});
   } catch (err) {
     console.error('Failed to load listeners:', err);
   }
