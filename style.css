@@ -59,7 +59,7 @@ header .title .tagline {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 @media (min-width: 600px) {
@@ -92,7 +92,7 @@ header .title h1 {
     grid-template-columns: 1fr 1.5fr 1fr 1fr;
   }
   .chat iframe {
-    height: 800px;
+    height: 700px;
   }
   #now-art {
     max-width: 600px;
@@ -440,7 +440,7 @@ section h2 {
 /* DESKTOP: increase header logo size by 50% */
 @media (min-width: 900px) {
   header .logo {
-    height: 180px !important;
+    height: 200px !important;
   }
 }
 
