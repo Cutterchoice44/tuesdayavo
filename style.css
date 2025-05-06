@@ -51,7 +51,7 @@ header .title h1 {
 header .title .tagline {
   font-size: 1.2rem;
   color: var(--brand-teal);
-  margin-top: 0.1rem;
+  margin-top: 0rem;
 }
 
 /* ─── GRID LAYOUT ─────────────────────────────────────────────────────────── */
@@ -82,11 +82,11 @@ header .title h1 {
 @media (min-width: 900px) {
   header .title h1 {
     /* desktop size */
-    font-size: 6rem;
+    font-size: 8rem;
   }
   
   header .title .tagline {
-    font-size: 1.9rem;
+    font-size: 2.45rem;
   }
   .grid-container {
     grid-template-columns: 1fr 1.5fr 1fr 1fr;
