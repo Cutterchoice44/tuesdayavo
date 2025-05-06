@@ -371,7 +371,7 @@ section h2 {
   /* Chat & Player sizing */
   .chat iframe    { height: 650px !important; }
   .live-player iframe,
-  .live-player audio { height: 80px !important; }
+  .live-player audio { height: 110px !important; }
 }
 
 /* MOBILE FIXES */
