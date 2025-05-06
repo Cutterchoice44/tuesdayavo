@@ -524,5 +524,10 @@ section {
 #mixcloud-list {
   margin-top: 0.5rem !important;
 }
+/* ─── ALIGN LIVE PLAYER WITH CHAT ───────────────────────────────────────────── */
+.chat iframe,
+.live-player .player-container {
+  margin-top: 0.5rem !important;
+}
 
 
