@@ -498,8 +498,8 @@ section {
 @media (min-width: 769px) {
   .live-player iframe,
   .live-player audio {
-    height: 500px !important;
-    max-height: 100vh; /* optional: let it grow with the viewport */
+    height: 600px !important;
+    max-height: 110vh; /* optional: let it grow with the viewport */
   }
 }
 /* DESKTOP: truly blow out the slideshow */
@@ -511,7 +511,7 @@ section {
     max-width: none   !important;
     transform: none   !important;
     height: 400px     !important;
-    max-height: 70vh  !important;
+    max-height: 90vh  !important;
   }
   /* <— change this: */
   #slideshow > * {
