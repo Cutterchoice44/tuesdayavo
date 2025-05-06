@@ -84,7 +84,7 @@ header .title h1 {
     /* desktop size */
     font-size: 6rem;
   }
-  }
+  
   header .title .tagline {
     font-size: 1.9rem;
   }
@@ -495,4 +495,29 @@ section {
   border-radius: 6px;
   padding: 0.5rem;
 }
+@media (min-width: 769px) {
+  .live-player iframe,
+  .live-player audio {
+    height: 500px !important;
+    max-height: 100vh; /* optional: let it grow with the viewport */
+  }
+}
+/* DESKTOP: truly blow out the slideshow */
+/* ─── SLIDESHOW: real desktop sizing ───────────────────────────────────────── */
+@media (min-width: 769px) {
+  #slideshow {
+    grid-column: 1 / -1 !important;
+    width: 100%       !important;
+    max-width: none   !important;
+    transform: none   !important;
+    height: 400px     !important;
+    max-height: 70vh  !important;
+  }
+  /* <— change this: */
+  #slideshow > * {
+    height: 100%     !important;
+  }
+}
+
+
 
